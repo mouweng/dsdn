@@ -1,0 +1,45 @@
+.header {
+  /* parent: appWrapper */
+
+  /* max-width: 58.25rem; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  display: flex;
+  align-items: center;
+
+  height: 6.25rem;
+  width: 100%;
+
+  background-image: url(../../images/bg.jpg);
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 78.25rem;
+  margin: 0 auto;
+}
+
+.header-logo {
+  display: flex;
+  align-items: baseline;
+  margin-right: 7.25rem;
+}
+
+.header-logo img:first-child {
+  width: 5rem;
+  height: 4rem;
+  margin-right: 0.5rem;
+}
+
+.header-logo img:last-child {
+  margin: 0;
+  /* font-family: "Poppins", sans-serif; */
+  font-weight: 700;
+  font-size: 2rem;
+  color: #52c3e6;
+}

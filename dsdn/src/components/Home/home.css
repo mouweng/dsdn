@@ -1,0 +1,17 @@
+.home {
+  min-height: 100vh;
+  display: flex;
+  gap: 15px;
+}
+
+.sidebar {
+  /* flex: 2; */
+}
+
+.content {
+  /* flex: 6;  */
+}
+
+.rightbar {
+  /* flex: 3; */
+}

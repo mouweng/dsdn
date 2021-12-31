@@ -1,0 +1,171 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background: rgba(25, 30, 46, 0.8);
+  border-radius: 17px;
+  color: white;
+
+  position: sticky;
+  position: -webkit-sticky;
+  height: calc(100vh - 7.25rem);
+  width: 15rem;
+  z-index: 99;
+  top: 6.25rem;
+
+  /* padding: 1rem 0; */
+  padding-bottom: 1rem;
+  /* temporary css for debug */
+  /* width: 312px; */
+  /* height: 783px; */
+}
+
+.sidebarUpper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.avatarUser {
+  /* width: 90px; */
+  /* height: 90px; */
+  border-radius: 50%;
+  /* object-fit: cover; */
+  margin: 1rem 0;
+}
+
+.username {
+  color: #fff;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.userAddr {
+  font-weight: 300;
+  line-height: 21px;
+  font-size: 14px;
+  color: #52c3e6;
+  margin-bottom: 1rem;
+
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.userAddrText {
+  width: 80%;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.copyUserAddr:hover {
+  cursor: pointer;
+}
+
+.userBadges {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 20px;
+}
+
+.showmoreButton {
+  /* font-family: "Poppins", serif; */
+  padding: .5rem 2rem;
+  border: 0;
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 24px;
+  background: linear-gradient(270deg, #4faac6 2.45%, #2c6bce 100%);
+  border-radius: 5px;
+}
+
+.showmoreButton:hover {
+  cursor: pointer;
+}
+
+.sidebarBottom {
+  margin-top: auto;
+}
+
+.sidebarBottom ul {
+  /* ul clear */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebarBottom ul li {
+  width: 100%;
+  /* height: 54px; */
+  height: 3.375rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.sidebarBottomItem {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sidebarBottomItem:hover {
+  background: rgba(25, 30, 46, 0.8);
+  color: white;
+  cursor: pointer;
+}
+
+.sidebarBottomItem > *:first-child {
+  font-size: 20px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* guest login */
+.guestLogin {
+  height: 134px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(25, 30, 46, 0.8);
+  border-radius: 17px 17px 0 0;
+  padding: 1rem;
+}
+
+.guestLoginRight:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.guestLoginRight {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5rem;
+}
+
+.loginText {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.1rem;
+}
+
+.loginText > *:last-child {
+  opacity: 0.8;
+}
+
+.loginDesc {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}

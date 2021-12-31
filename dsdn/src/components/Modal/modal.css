@@ -1,0 +1,171 @@
+.modalShadow {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.7;
+  z-index: 99;
+
+  /* -webkit-backdrop-filter: brightness(30%);
+  backdrop-filter: brightness(30%); */
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  /* aspect-ratio: 4 / 3; */
+  width: 50%;
+  max-width: 600px;
+  background-color: rgba(25, 30, 46, 0.95);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+
+  padding: 1rem;
+  border-radius: 1rem;
+
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+
+  @media (max-width: 500px) {
+    left: 0px;
+    margin: 0px 10px;
+  }
+}
+
+.modalContent {
+  overflow: auto;
+  min-height: 200px;
+  /* padding: 0px 40px; */
+
+  /* padding-bottom: 80px; */
+}
+
+.modalContent > textarea {
+  background: transparent;
+  width: 100%;
+  color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  resize: none;
+}
+.modalContent > textarea:focus {
+  outline: none;
+}
+
+.modalFooter {
+  /* box-shadow: 0px -2px 10px 0px grey; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.modalBottomButton {
+  color: #52c3e6;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #09021d;
+  border: transparent;
+  padding: 0.5rem;
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+}
+
+.modalBottomButton:hover {
+  opacity: 1;
+  outline: 1px solid #52c3e6;
+}
+
+.modalAddMedia {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  opacity: 0.6;
+  transition: opacity 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.modalAddMedia:hover {
+  opacity: 1;
+}
+
+.modalAddMedia > svg {
+  width: 32px;
+  height: 32px;
+}
+
+.modalBanner {
+  /* background-color: #09021d; */
+  color: white;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.modalClose {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 32px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+
+  background-color: #09021d;
+  opacity: 0.6;
+  transition: opacity 0.2s ease-in-out, outline 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalClose:hover {
+  cursor: pointer;
+  opacity: 1;
+  outline: 1px solid #52c3e6;
+}
+
+.modalClose > svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.modalImage {
+  margin: 5px 0;
+  gap: 1rem;
+  display: flex;
+
+  position: relative;
+}
+
+.modalImage > img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.modalImage > button {
+  /* background-color: #09021d; */
+  height: 2rem;
+  border: 0;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.6;
+  transition: all 0.2s ease-in-out;
+}
+
+.modalImage > button:hover {
+  opacity: 1;
+  color: red;
+  outline: red 1px solid;
+}
